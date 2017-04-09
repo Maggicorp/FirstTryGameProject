@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link href="css/main.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<script src="js/index.js" type="text/javacript"></script>
+</head>
+
+<body>
+<header><h1>Tic <br>&nbsp; Tac<br>&nbsp;&nbsp;&nbsp; Toe</h1>
+<h4>play to win</h4>
+</header>
+<main>
+	<section class="logins">
+			<form class="userXlogin"><h5>User X Login </h5>
+			<label for="email">email</label> <input id="email" name="credentials[email]" type="text" value="you@gmail.com"><br>
+ 			<label for="password">password</label> <input id="password" name="credentials[password]" type="password" value="word"><br>
+  			<label for="confirm">confirm password</label><input id="confirm" name="credentials[password_confirmation]" type="password" value="word"><br> <button id="submitX" name="userXsubmit" type="submit" value="Register!">Sign Up!</button>
+			</form>
+		
+			<form class="userOlogin"><h5>User O login</h5>
+			<label for="emailO">email</label> <input id="emailO" name="credentials[email]" type="text" value="you@gmail.com"><br>
+ 			<label for="passwordO">password</label> <input id="passwordO" name="credentials[password]" type="password" value="word"><br>
+  			<label for="confirmO">confirm password</label><input id="confirm" name="credentials[password_confirmation]" type="password" value="word"><br> <button id="confirm" name="userXsubmit" type="submit" value="Register!">Sign Up!</button>
+			</form>
+			
+			</form>
+
+	</section>
+	<div class="board_section">
+
+		<div class="game_board">
+			<div class="board_square" id='box0'> </div>
+			<div class='board_square' id='box1'> </div>
+			<div class='board_square' id='box2'> </div>
+			<div class='board_square' id='box3'> </div>
+			<div class='board_square' id='box4'> </div>
+			<div class='board_square' id='box5'> </div>
+			<div class='board_square' id='box6'> </div>
+			<div class='board_square' id='box7'> </div>
+			<div class='board_square' id='box8'> </div>
+		</div>
+	</div>
+	<aside class="score">
+	<br><br>
+		<button class="new_game">New Game</button>
+		<div class="score_board"><br>Score Board<br><br>
+		<table cellspacing="1" cellpadding="1">
+  <tbody>
+    <tr>
+      <th scope="col">x wins</th>
+      <th id="winX" scope="col">0</th>
+    </tr>
+    <tr>
+      <th scope="row">o wins</th>
+      <td id="winO">0</td>
+    </tr>
+    <tr>
+      <th scope="row">tie</th>
+      <td id="winO">0</td>
+    </tr>
+  </tbody>
+</table>
+
+		</div>
+	</aside>
+</main>
+<footer><p>2017&copyMaggiCorp</p></footer>
+</body>
+</html>
