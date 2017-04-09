@@ -1,0 +1,31 @@
+
+aside.score {
+	float: left;
+	width: 20%;
+	background: yellow;
+	height: 1000px;
+}
+div.score_board {
+	height: 250px;
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: aquamarine;
+}
+table {
+	width: 120px;
+	height:100px;
+	font-size: 12px;
+	border: gray solid 2px;
+	margin: 0 auto;
+}
+button {
+	background-color: blueviolet;
+	border-radius: 70px;
+	border: inset 2px gray;
+	height: 70px;
+	color: yellow;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+}
