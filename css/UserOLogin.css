@@ -1,0 +1,35 @@
+
+
+h5 {
+	background-color: floralwhite;
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+form.userO {
+	background-color: lightskyblue;
+	text-align: left;
+	width: 250px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 10px 5px;
+}
+form.userO button {
+	width: 90px;
+	height: 25px;
+	color: ghostwhite;
+	background-color: darkviolet;
+	text-align: center;
+	font-size: 9px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+form.userO input {
+	width: auto;
+	height: 20px;
+	font-size: 9px;
+	text-align: left;
+}

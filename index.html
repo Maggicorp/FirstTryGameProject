@@ -5,8 +5,8 @@
 <title>Index</title>
 <link href="css/main.css" rel="stylesheet">
 <link href="css/board.css" rel="stylesheet">
-<link href="css/login.css" rel="stylesheet">
-<link href="css/scoreboard.css" rel="stylesheet">
+<link href="css/UserXLogin.css" rel="stylesheet">
+<link href="css/UserOLogin.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
 </head>
@@ -17,31 +17,37 @@
 <h4>play to win</h4>
 </header>
 <main>
-	<section class="logins">
-			<form class="userXlogin"><h5>User X Sign Up </h5>
-			<label for="email">email</label> <input id="email" name="credentials[email]" type="text" value="you@gmail.com"><br>
- 			<label for="password">password</label> <input id="password" name="credentials[password]" type="password" value="word"><br>
-  			<label for="confirm">confirm password</label><input id="confirm" name="credentials[password_confirmation]" type="password" value="word"><br> <button id="submitX" name="userXsubmit" type="submit" value="Register!">Sign Up!</button>
-			</form>
+	<section class="logins userX">
+		<div>
+		<form class="userX signUp"><h5>User X Sign Up </h5>
+				<label for="email">email</label> <input id="email" name="credentials[email]" type="text" value=""><br>
+ 				<label for="password">password</label> <input id="password" name="credentials[password]" type="password" value=""><br>
+  			<label for="confirm">confirm password</label><input id="confirm" name="credentials[password_confirmation]" type="password" value=""><br> <button id="submitX" name="userXsubmit" type="submit" value="Register!">Sign Up!</button>
+		</form>
+		</div>
 
-			<form class="userXlogin"><h5>User X Login<h5>
-  <label for="email">email</label><input name="credentials[email]" type="text" value="an@example.email"><br>
-  	<label for="password">password</label><input name="credentials[password]" type="password" value="an example password">
-		<button class="signinX" type=submit value="sign in">Sign in!<button>
-</form>
+		<div>
+		<form class="userX login"> <h5> User X Login <h5>
+	  		<label for="email">email</label><input name="credentials[email]" type="text" value=""><br>
+	  		<label for="password">password</label><input name="credentials[password]" type="password" value="">
+			<button class="signinX" type=submit value="sign in">Sign in!</button>
+		</form>
+		</div>
+		
+		<div>
+		<form class="userX changePsw"> <h5> User X change password <h5>
+	  		<label for="old">Old Password</label><input name="password[old]" type="password" value=""><br>
+	  		<label for="new">New Password</label><input name="password[new]" type="password" value="">
+			<button class="changePsw" type=submit value="change Password">Change in!</button>
+		</form>
+		</div>
 
+		<div>		<form class="userX signOut"> <h5> User X Sign Out </h5>
+			<button class="signOutx" type="submit" value="sign out">Sign out! </button>
+		</form>
+		</div>
 
-
-
-
-			<form class="userOlogin"><h5>User O login</h5>
-			<label for="emailO">email</label> <input id="emailO" name="credentials[email]" type="text" value="you@gmail.com"><br>
- 			<label for="passwordO">password</label> <input id="passwordO" name="credentials[password]" type="password" value="word"><br>
-  			<label for="confirmO">confirm password</label><input id="confirm" name="credentials[password_confirmation]" type="password" value="word"><br> <button id="confirm" name="userXsubmit" type="submit" value="Register!">Sign Up!</button>
-			</form>
-
-			</form>
-
+		
 	</section>
 	<div class="board_section">
 		<div class="game_board">
@@ -55,10 +61,6 @@
 			<div class='board_square' id='box7'> </div>
 			<div class='board_square' id='box8'> </div>
 		</div>
-
-	</div>
-	<aside class="score">
-	<br><br>
 		<button class="new_game">New Game</button>
 		<div class="score_board"><br>Score Board<br><br>
 		<table cellspacing="1" cellpadding="1">
@@ -76,10 +78,40 @@
       <td id="winO">0</td>
     </tr>
   </tbody>
-</table>
-
+  </table>
 		</div>
-	</aside>
+	</div>
+	<section class="logins userO">
+		<div>
+		<form class="userO signUp"><h5>User O Sign Up</h5>
+			<label for="emailO">email</label> <input id="emailO" name="credentials[email]" type="text" value=""><br>
+ 			<label for="passwordO">password</label> <input id="passwordO" name="credentials[password]" type="password" value=""><br>
+  			<label for="confirmO">confirm password</label><input id="confirm" name="credentials[password_confirmation]" type="password" value=""><br> <button id="confirm" name="userOsubmit" type="submit" value="Register!">Sign Up!</button>
+			</form>
+		</div>
+		
+		<div>
+		<form class="userO login"> <h5> User X Login <h5>
+	  		<label for="email">email</label><input name="credentials[email]" type="text" value=""><br>
+	  		<label for="password">password</label><input name="credentials[password]" type="password" value="">
+				<button class="signinO" type=submit value="sign in">Sign in!</button>
+		</form>
+		</div>	
+		
+		<div>
+		<form class="userO changePsw"> <h5> User O change password <h5>
+	  		<label for="old">Old Password</label><input name="password[old]" type="password" value=""><br>
+	  		<label for="new">New Password</label><input name="password[new]" type="password" value="">
+			<button class="changePsw" type=submit value="change Password">Change in!</button>
+		</form>
+		</div>
+
+		<div>
+		<form class="userO signOut"> <h5> User X Sign out </h5>
+			<button class="signOutO" type="submit" value="sign out">Sign out! </button>	
+		</div>
+			
+	</section>
 </main>
 <footer><p>2017&copyMaggiCorp</p></footer>
 </div>

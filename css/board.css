@@ -1,6 +1,6 @@
 
 div.board_section {
-	width: 50%;
+	width: 40%;
 	float: left;
 	background: gray;
 	height: 1000px;
@@ -34,4 +34,28 @@ div.board_square:hover {
 }
 #box7 {
 	 background-image: url(../media/xImage.png);
+}
+div.score_board {
+	height: 180px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: darkorange;
+}
+table {
+	width: 200px;
+	height:100px;
+	font-size: 12px;
+	border: gray solid 2px;
+	margin: 0 auto;
+}
+button {
+	background-color: blueviolet;
+	border-radius: 70px;
+	border: inset 2px gray;
+	height: 30px;
+	color: yellow;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+	margin-top: 10px;
 }
